@@ -8,7 +8,7 @@ public class Main {
             while ((check = reader.readLine()) != null) {
                 code.append(check).append("\n");
             }
-            String noComments = code.toString().replaceAll("(//.*|/\\*[\\s\\S]*?\\*/)", "");
+            String noComments = code.toString().replaceAll("(//.*|/\\*[\\s\\S]*?\\*/)","");
             writer.write(noComments);
         } catch (IOException e) {
             System.err.println();
